@@ -10175,6 +10175,10 @@ video {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.font-body {
+  font-family: Nunito;
+}
+
 .font-serif {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -28399,6 +28403,10 @@ video {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
+  .sm\:font-body {
+    font-family: Nunito;
+  }
+
   .sm\:font-serif {
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   }
@@ -46591,6 +46599,10 @@ video {
 
   .md\:font-sans {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .md\:font-body {
+    font-family: Nunito;
   }
 
   .md\:font-serif {
@@ -64787,6 +64799,10 @@ video {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
+  .lg\:font-body {
+    font-family: Nunito;
+  }
+
   .lg\:font-serif {
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   }
@@ -82979,6 +82995,10 @@ video {
 
   .xl\:font-sans {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .xl\:font-body {
+    font-family: Nunito;
   }
 
   .xl\:font-serif {
