@@ -1,17 +1,20 @@
 import React from 'react';
-import './styles/main.css'
+import Home from './pages/Home';
+import './styles/main.css';
+import { Router, RouteComponentProps } from "@reach/router";
+import Callback from './pages/Callback';
 
 function App() {
   return (
-    <div className="h-screen overflow-hidden">
-		<div className="bg-green-500 h-12 px-10 flex justify-center">
-			<p className="text-white text-2xl m-auto">Friend Zoned</p>	  
-		</div>
-		<div className="h-full flex justify-center">
-			<p className="m-auto">Coming soon...</p>  
-		</div>
-    </div>
+    <Router>
+      <RouterPage path="/" pageComponent={<Home />}  />
+      <RouterPage path="/callback" pageComponent={<Callback />}  />
+    </Router>
   );
 }
+
+const RouterPage = (
+  props: { pageComponent: JSX.Element } & RouteComponentProps
+) => props.pageComponent;
 
 export default App;
