@@ -3,13 +3,12 @@ import React from 'react';
 function Home() {
 
   const onClick = () => {
-    // window.auth2.grantOfflineAccess().then(signInCallback);
-
-    const queryParams = {
+    const queryParams: {[key: string]: string} = {
       response_type: 'code',
       client_id: '687576156020-53qjqor43g43huc6n7g5m91i4ib9sgr3.apps.googleusercontent.com',
-      scope: 'openid email',
-      redirect_uri: 'http://localhost:3000/callback'
+      scope: 'openid profile email',
+      redirect_uri: 'http://localhost:3000/callback',
+      access_type: 'offline',
     };
     const qs = Object.keys(queryParams)
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(queryParams[key])}`)
