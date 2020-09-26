@@ -1,0 +1,38 @@
+$width: 60px;
+
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: aliceblue;
+
+  .avatarContainer {
+    width: $width;
+    height: $width;
+    position: relative;
+    flex-shrink: 0;
+
+    .avatar2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .tileDesc {
+    width: 100%;
+    padding: 0 15px;
+    overflow: hidden;
+    .message {
+      @include ellipsis();
+    }
+  }
+}
