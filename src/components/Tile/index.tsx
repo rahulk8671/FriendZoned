@@ -19,7 +19,7 @@ export function Tile (props: ITileProps) {
           <span className="font-semibold">Harsh, Rahul</span>
           <span>Tuesday</span>
         </div>
-        <p>Some very long text</p>
+        <p className={styles.message}>Some very very loooooooooooong text</p>
       </div>
     </div>
   );

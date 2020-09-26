@@ -1,11 +1,18 @@
 $width: 60px;
 
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .tile {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 10px;
+  padding: 5px;
+  background-color: aliceblue;
 
   .avatarContainer {
     width: $width;
@@ -23,5 +30,9 @@ $width: 60px;
   .tileDesc {
     width: 100%;
     padding: 0 15px;
+    overflow: hidden;
+    .message {
+      @include ellipsis();
+    }
   }
 }
